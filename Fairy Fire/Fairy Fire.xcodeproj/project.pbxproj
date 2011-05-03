@@ -133,6 +133,9 @@
 		5570536D136F28AB00AAA73D /* PlayfieldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570536C136F28AB00AAA73D /* PlayfieldLayer.m */; };
 		55705379136F485600AAA73D /* PlayBackgroundEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 55705378136F485600AAA73D /* PlayBackgroundEntity.m */; };
 		5570537C136F4AA200AAA73D /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570537B136F4AA200AAA73D /* Resource.m */; };
+		55A8A825136F688E009DF239 /* Boid.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8A824136F688E009DF239 /* Boid.m */; };
+		55A8A827136F6A55009DF239 /* minicake.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A8A826136F6A55009DF239 /* minicake.png */; };
+		55A8A831136F6EF7009DF239 /* boid.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A8A830136F6EF7009DF239 /* boid.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -386,6 +389,10 @@
 		55705378136F485600AAA73D /* PlayBackgroundEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayBackgroundEntity.m; sourceTree = "<group>"; };
 		5570537A136F4AA200AAA73D /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Resource.h; path = BitsNBobs/Resource.h; sourceTree = "<group>"; };
 		5570537B136F4AA200AAA73D /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Resource.m; path = BitsNBobs/Resource.m; sourceTree = "<group>"; };
+		55A8A823136F688D009DF239 /* Boid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boid.h; sourceTree = "<group>"; };
+		55A8A824136F688E009DF239 /* Boid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Boid.m; sourceTree = "<group>"; };
+		55A8A826136F6A55009DF239 /* minicake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minicake.png; sourceTree = "<group>"; };
+		55A8A830136F6EF7009DF239 /* boid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boid.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -774,6 +781,8 @@
 		55705348136EF51200AAA73D /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				55A8A830136F6EF7009DF239 /* boid.png */,
+				55A8A826136F6A55009DF239 /* minicake.png */,
 				55705352136EFD7400AAA73D /* ipad-background.png */,
 				55705353136EFD7400AAA73D /* background-hd.png */,
 				55705354136EFD7400AAA73D /* background.png */,
@@ -862,6 +871,8 @@
 		55705363136F0B4200AAA73D /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				55A8A823136F688D009DF239 /* Boid.h */,
+				55A8A824136F688E009DF239 /* Boid.m */,
 				55705377136F485600AAA73D /* PlayBackgroundEntity.h */,
 				55705378136F485600AAA73D /* PlayBackgroundEntity.m */,
 			);
@@ -945,6 +956,8 @@
 				55705356136EFD7500AAA73D /* background-hd.png in Resources */,
 				55705357136EFD7500AAA73D /* background.png in Resources */,
 				5570535E136F08AA00AAA73D /* Main.plist in Resources */,
+				55A8A827136F6A55009DF239 /* minicake.png in Resources */,
+				55A8A831136F6EF7009DF239 /* boid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1057,6 +1070,7 @@
 				5570536D136F28AB00AAA73D /* PlayfieldLayer.m in Sources */,
 				55705379136F485600AAA73D /* PlayBackgroundEntity.m in Sources */,
 				5570537C136F4AA200AAA73D /* Resource.m in Sources */,
+				55A8A825136F688E009DF239 /* Boid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1109,7 +1123,7 @@
 				GCC_PREFIX_HEADER = "Fairy Fire/Supporting Files/Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "Fairy Fire/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1126,7 +1140,7 @@
 				GCC_PREFIX_HEADER = "Fairy Fire/Supporting Files/Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "Fairy Fire/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
