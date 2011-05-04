@@ -13,7 +13,7 @@
 
 +(id) node
 {
-	return [PlayBackgroundEntity spriteWithFile:[Resource bestVersion:@"background.png"]];
+	return [PlayBackgroundEntity spriteWithFile:[Resource bestVersion:@"background.jpg"]];
 }
 
 - (id)init 
