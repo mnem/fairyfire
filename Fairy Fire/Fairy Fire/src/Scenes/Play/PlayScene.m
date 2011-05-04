@@ -16,6 +16,7 @@
     self = [super init];
     if (self) 
 	{
+		[self addPlayfieldLayer];
 		// 'layer' is an autorelease object.
 		PlayfieldLayer *layer = [PlayfieldLayer node];
 		
