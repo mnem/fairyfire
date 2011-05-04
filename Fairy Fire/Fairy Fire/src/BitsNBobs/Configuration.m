@@ -51,4 +51,10 @@ NSString * const kMainConfigStartScene = @"StartScene";
     return self;
 }
 
+- (void)dealloc 
+{
+    self.main = Nil;
+	
+    [super dealloc];
+}
 @end
