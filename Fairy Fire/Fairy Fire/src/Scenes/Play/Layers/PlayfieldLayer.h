@@ -9,19 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "PlayBackgroundEntity.h"
-#import "Boid.h"
+#import "PlayWorldModel.h"
 
 @interface PlayfieldLayer : CCLayer
 {
-	PlayBackgroundEntity* background;    
-
-    CCSpriteBatchNode* _sheet;
-	Boid* _flockPointer; // This is a cheap style linked list
-	CGPoint _currentTouch;
+	PlayBackgroundEntity* background;  
+	PlayWorldModel* worldModel;
 }
-
-@property(nonatomic, retain) Boid* _flockPointer;
-@property(nonatomic, assign) CCSpriteBatchNode* _sheet;
-@property(nonatomic, assign) CGPoint _currentTouch;
 
 @end

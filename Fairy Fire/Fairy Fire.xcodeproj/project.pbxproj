@@ -166,9 +166,9 @@
 		55705356136EFD7500AAA73D /* background-hd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55705353136EFD7400AAA73D /* background-hd.jpg */; };
 		55705357136EFD7500AAA73D /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55705354136EFD7400AAA73D /* background.jpg */; };
 		5570535E136F08AA00AAA73D /* Main.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5570535D136F08AA00AAA73D /* Main.plist */; };
-		55705361136F096F00AAA73D /* PlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 55705360136F096F00AAA73D /* PlayScene.m */; };
+		55705361136F096F00AAA73D /* PlayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55705360136F096F00AAA73D /* PlayScene.mm */; };
 		5570536A136F136400AAA73D /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 55705369136F136300AAA73D /* Configuration.m */; };
-		5570536D136F28AB00AAA73D /* PlayfieldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570536C136F28AB00AAA73D /* PlayfieldLayer.m */; };
+		5570536D136F28AB00AAA73D /* PlayfieldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5570536C136F28AB00AAA73D /* PlayfieldLayer.mm */; };
 		55705379136F485600AAA73D /* PlayBackgroundEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 55705378136F485600AAA73D /* PlayBackgroundEntity.m */; };
 		5570537C136F4AA200AAA73D /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570537B136F4AA200AAA73D /* Resource.m */; };
 		55A8A827136F6A55009DF239 /* minicake.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A8A826136F6A55009DF239 /* minicake.png */; };
@@ -493,11 +493,11 @@
 		55705354136EFD7400AAA73D /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		5570535D136F08AA00AAA73D /* Main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main.plist; sourceTree = "<group>"; };
 		5570535F136F096F00AAA73D /* PlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayScene.h; sourceTree = "<group>"; };
-		55705360136F096F00AAA73D /* PlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayScene.m; sourceTree = "<group>"; };
+		55705360136F096F00AAA73D /* PlayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlayScene.mm; sourceTree = "<group>"; };
 		55705368136F136300AAA73D /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Configuration.h; path = BitsNBobs/Configuration.h; sourceTree = "<group>"; };
 		55705369136F136300AAA73D /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Configuration.m; path = BitsNBobs/Configuration.m; sourceTree = "<group>"; };
 		5570536B136F28AB00AAA73D /* PlayfieldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayfieldLayer.h; sourceTree = "<group>"; };
-		5570536C136F28AB00AAA73D /* PlayfieldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayfieldLayer.m; sourceTree = "<group>"; };
+		5570536C136F28AB00AAA73D /* PlayfieldLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlayfieldLayer.mm; sourceTree = "<group>"; };
 		55705377136F485600AAA73D /* PlayBackgroundEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayBackgroundEntity.h; sourceTree = "<group>"; };
 		55705378136F485600AAA73D /* PlayBackgroundEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayBackgroundEntity.m; sourceTree = "<group>"; };
 		5570537A136F4AA200AAA73D /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Resource.h; path = BitsNBobs/Resource.h; sourceTree = "<group>"; };
@@ -1098,7 +1098,7 @@
 				55705363136F0B4200AAA73D /* Entities */,
 				55705362136F0B3700AAA73D /* Layers */,
 				5570535F136F096F00AAA73D /* PlayScene.h */,
-				55705360136F096F00AAA73D /* PlayScene.m */,
+				55705360136F096F00AAA73D /* PlayScene.mm */,
 			);
 			path = Play;
 			sourceTree = "<group>";
@@ -1115,7 +1115,7 @@
 			isa = PBXGroup;
 			children = (
 				5570536B136F28AB00AAA73D /* PlayfieldLayer.h */,
-				5570536C136F28AB00AAA73D /* PlayfieldLayer.m */,
+				5570536C136F28AB00AAA73D /* PlayfieldLayer.mm */,
 			);
 			path = Layers;
 			sourceTree = "<group>";
@@ -1317,9 +1317,9 @@
 				55111452136EB7840070EBFC /* main.m in Sources */,
 				55111455136EB7840070EBFC /* AppDelegate.m in Sources */,
 				55111458136EB7840070EBFC /* RootViewController.m in Sources */,
-				55705361136F096F00AAA73D /* PlayScene.m in Sources */,
+				55705361136F096F00AAA73D /* PlayScene.mm in Sources */,
 				5570536A136F136400AAA73D /* Configuration.m in Sources */,
-				5570536D136F28AB00AAA73D /* PlayfieldLayer.m in Sources */,
+				5570536D136F28AB00AAA73D /* PlayfieldLayer.mm in Sources */,
 				55705379136F485600AAA73D /* PlayBackgroundEntity.m in Sources */,
 				5570537C136F4AA200AAA73D /* Resource.m in Sources */,
 				556F136013708F8D0003903A /* b2BroadPhase.cpp in Sources */,
@@ -1403,18 +1403,22 @@
 		55111460136EB7840070EBFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Fairy Fire/Resources/Entitlements.plist";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fairy Fire/Supporting Files/Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = (
+					"\"Fairy Fire/libs\"",
+				);
 				INFOPLIST_FILE = "Fairy Fire/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"Fairy Fire/libs\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1422,17 +1426,21 @@
 		55111461136EB7840070EBFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Fairy Fire/Resources/Entitlements.plist";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fairy Fire/Supporting Files/Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = (
+					"\"Fairy Fire/libs\"",
+				);
 				INFOPLIST_FILE = "Fairy Fire/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"Fairy Fire/libs\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

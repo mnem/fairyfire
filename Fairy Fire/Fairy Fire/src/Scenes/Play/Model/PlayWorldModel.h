@@ -16,4 +16,6 @@
 
 @property(readonly,nonatomic) b2World* world;
 
+- (void)setWorldBoundaryInPixelsWidth:(CGFloat)w height:(CGFloat)h;
+
 @end
